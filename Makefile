@@ -1,0 +1,33 @@
+# binary search program makefile
+# Hussein Suleman
+# 27 March 2017
+
+JAVAC=/usr/bin/javac
+.SUFFIXES: .java .class
+SRCDIR=src
+BINDIR=bin
+
+#$(BINDIR)/%.class:$(SRCDIR)/%.java
+#	$(JAVAC) -d $(BINDIR)/ -cp $(BINDIR) $<
+
+#CLASSES=Water.class Terrain.class FlowPanel.class Flow.class
+#CLASS_FILES=$(CLASSES:%.class=$(BINDIR)/%.class)
+         
+#default: $(CLASS_FILES)
+
+all:
+	javac -d bin $(SRCDIR)/*.java
+
+clean:
+	rm $(BINDIR)/*.class
+
+runMedium:
+	@java -cp bin Flow medsample_in.txt
+	
+runLarge:
+	@java -cp bin Flow largesample_in.txt
+
+docs:
+	javadoc -classpath bin/ -d doc/ src/*.java
+cleandocs:
+	rm -r doc/*
