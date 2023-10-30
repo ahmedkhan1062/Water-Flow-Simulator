@@ -4,6 +4,6 @@ The instructions for the assignment are included in the pdf file: WaterflowSimul
 
 The program was designed to be run in a linux environment via the command line using Make Files.
 
-My program can be launched with two different make commands: runMedium and
-runLarge. This depends on whether you want to run the medium terrain or the
+My program can be launched with two different make commands: "make runMedium" and
+"make runLarge". This depends on whether you want to run the medium terrain or the
 large one.
