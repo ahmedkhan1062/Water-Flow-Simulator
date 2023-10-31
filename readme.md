@@ -9,3 +9,5 @@ The program was designed to be run in a linux environment via the command line u
 My program can be launched with two different make commands: "make runMedium" and
 "make runLarge". This depends on whether you want to run the medium terrain or the
 large one.
+
+All project files can be found inside the "src" folder
